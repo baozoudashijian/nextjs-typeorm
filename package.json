@@ -26,6 +26,7 @@
       "@types/node": "^16.11.10",
       "@types/react": "18.0.9",
       "@types/react-dom": "18.0.5",
+      "babel-plugin-transform-typescript-metadata": "^0.3.2",
       "eslint": "8.16.0",
       "eslint-config-next": "12.1.6",
       "ts-node": "10.7.0",
