@@ -7,9 +7,9 @@
       "build": "next build",
       "start": "next start",
       "typeorm:start": "node ./dist/index.js",
-      "typeorm:build": "",
       "migration:run": "typeorm migration:run -d ./dist/data-source.js",
-      "migration:revert": "typeorm migration:revert -d ./dist/data-source.js"
+      "migration:revert": "typeorm migration:revert -d ./dist/data-source.js",
+      "entity:create": "typeorm entity:create"
    },
    "dependencies": {
       "@babel/cli": "^7.17.10",
