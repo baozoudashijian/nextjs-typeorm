@@ -11,6 +11,8 @@ var _typeorm = require("typeorm");
 
 var _User = require("./entity/User");
 
+var _Post = require("./entity/Post");
+
 var AppDataSource = new _typeorm.DataSource({
   type: "postgres",
   host: "localhost",
@@ -20,7 +22,7 @@ var AppDataSource = new _typeorm.DataSource({
   database: "blog_development",
   synchronize: false,
   logging: false,
-  entities: [_User.User],
+  entities: [_User.User, _Post.Post],
   migrations: ['dist/migration/**/*.js'],
   subscribers: []
 });
