@@ -11,4 +11,8 @@ export class Post {
 
     @Column('text')
     content: string;
+
+    constructor(post) {
+        Object.assign(this, post)
+    }
 }
