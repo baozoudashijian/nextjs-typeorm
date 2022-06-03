@@ -1,13 +1,10 @@
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
 
-@Entity('posts')
-export class Post {
+@Entity('comments')
+export class Comment {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn('increment')
     id: number;
-
-    @Column('varchar')
-    title: string;
 
     @Column('text')
     content: string;

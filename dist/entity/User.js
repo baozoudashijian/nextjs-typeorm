@@ -19,15 +19,17 @@ var _initializerWarningHelper2 = _interopRequireDefault(require("@babel/runtime/
 
 var _typeorm = require("typeorm");
 
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5;
 
 var User = (_dec = (0, _typeorm.Entity)({
   name: 'users'
-}), _dec2 = (0, _typeorm.PrimaryGeneratedColumn)('increment'), _dec3 = Reflect.metadata("design:type", Number), _dec4 = (0, _typeorm.Column)('varchar'), _dec5 = Reflect.metadata("design:type", String), _dec6 = (0, _typeorm.Column)('varchar'), _dec7 = Reflect.metadata("design:type", String), _dec(_class = (_class2 = function User() {
+}), _dec2 = (0, _typeorm.PrimaryGeneratedColumn)('increment'), _dec3 = Reflect.metadata("design:type", Number), _dec4 = (0, _typeorm.Column)('varchar'), _dec5 = Reflect.metadata("design:type", String), _dec6 = (0, _typeorm.Column)('varchar'), _dec7 = Reflect.metadata("design:type", String), _dec8 = (0, _typeorm.CreateDateColumn)(), _dec9 = Reflect.metadata("design:type", typeof Date === "undefined" ? Object : Date), _dec10 = (0, _typeorm.UpdateDateColumn)(), _dec11 = Reflect.metadata("design:type", typeof Date === "undefined" ? Object : Date), _dec(_class = (_class2 = function User() {
   (0, _classCallCheck2["default"])(this, User);
   (0, _initializerDefineProperty2["default"])(this, "id", _descriptor, this);
   (0, _initializerDefineProperty2["default"])(this, "username", _descriptor2, this);
   (0, _initializerDefineProperty2["default"])(this, "passwordDigest", _descriptor3, this);
+  (0, _initializerDefineProperty2["default"])(this, "createdAt", _descriptor4, this);
+  (0, _initializerDefineProperty2["default"])(this, "updatedAt", _descriptor5, this);
 }, (_descriptor = (0, _applyDecoratedDescriptor2["default"])(_class2.prototype, "id", [_dec2, _dec3], {
   configurable: true,
   enumerable: true,
@@ -39,6 +41,16 @@ var User = (_dec = (0, _typeorm.Entity)({
   writable: true,
   initializer: null
 }), _descriptor3 = (0, _applyDecoratedDescriptor2["default"])(_class2.prototype, "passwordDigest", [_dec6, _dec7], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+}), _descriptor4 = (0, _applyDecoratedDescriptor2["default"])(_class2.prototype, "createdAt", [_dec8, _dec9], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: null
+}), _descriptor5 = (0, _applyDecoratedDescriptor2["default"])(_class2.prototype, "updatedAt", [_dec10, _dec11], {
   configurable: true,
   enumerable: true,
   writable: true,

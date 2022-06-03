@@ -17,10 +17,7 @@ _dataSource.AppDataSource.initialize().then( /*#__PURE__*/function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            post = new _Post.Post({
-              title: '第四篇文章',
-              content: '那就这样吧，再学下去就不礼貌了！'
-            });
+            post = new _Post.Post();
             _context.next = 3;
             return _dataSource.AppDataSource.manager.save(post);
 

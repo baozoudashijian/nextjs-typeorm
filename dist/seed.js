@@ -19,10 +19,7 @@ _dataSource.AppDataSource.initialize().then( /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             mockData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (item) {
-              return new _Post.Post({
-                title: "\u7B2C".concat(item, "\u7BC7\u6587\u7AE0"),
-                content: '那就这样吧，再学下去就不礼貌了！'
-              });
+              return new _Post.Post();
             });
             console.log(mockData, 'mockData');
             _context.next = 4;
