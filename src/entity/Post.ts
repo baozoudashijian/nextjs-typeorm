@@ -1,5 +1,6 @@
 import { User } from './User';
-import { Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
+import { Column, CreateDateColumn, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
+import { Comment } from './Comment';
 
 @Entity('posts')
 export class Post {
@@ -22,5 +23,8 @@ export class Post {
     @ManyToOne(type => User, user => user.posts)
     author: User
 
-    
+    @OneToMany(type => Comment, comment => comment.post)
+    comments: Comment[]
+
+
 }
